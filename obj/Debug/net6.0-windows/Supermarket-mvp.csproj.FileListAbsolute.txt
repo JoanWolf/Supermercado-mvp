@@ -3,7 +3,6 @@ C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-m
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\bin\Debug\net6.0-windows\Supermarket-mvp.runtimeconfig.json
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\bin\Debug\net6.0-windows\Supermarket-mvp.dll
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\bin\Debug\net6.0-windows\Supermarket-mvp.pdb
-C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Form1.resources
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.csproj.GenerateResource.cache
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.AssemblyInfoInputs.cache
@@ -14,3 +13,5 @@ C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-m
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.pdb
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.genruntimeconfig.cache
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\ref\Supermarket-mvp.dll
+C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Vista.PayModeView.resources
+C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Properties.Resources.resources
