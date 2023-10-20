@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Supermarket_mvp.NewFolder
+namespace Supermarket_mvp.Vista
+
 {
     internal interface IPayModeView
     {
