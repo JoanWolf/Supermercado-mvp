@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Supermarket_mvp.Vista
 {
-    internal class ICategoryView
+    internal interface ICategoryView
     {
-        string ModelId { get; set; }
-        string CategoryModelName { get; set; }
-        string CategoryModelObservation { get; set; }
+        string CategoryId { get; set; }
+        string CategoryName { get; set; }
+        string CategoryObservation { get; set; }
 
         string SearchValue { get; set; }
         bool IsEdit { get; set; }
@@ -24,7 +24,7 @@ namespace Supermarket_mvp.Vista
         event EventHandler SaveEvent;
         event EventHandler CancelEvent;
 
-        void SetCategoryModelListBildingSource(BindingSource payModeList);
+        void SetCategoryListBildingSource(BindingSource categoryList);
         void Show();
     }
 }
