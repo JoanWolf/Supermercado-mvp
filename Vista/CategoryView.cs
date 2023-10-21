@@ -46,7 +46,7 @@ namespace Supermarket_mvp.Vista
 
                 tabControl1.TabPages.Remove(tabPageCategoryList);
                 tabControl1.TabPages.Add(tabPageCategoryDetail);
-                tabPageCategoryDetail.Text = "Add New Pay Mode"; // cambia titutlo pestaña
+                tabPageCategoryDetail.Text = "Add New Category"; // cambia titutlo pestaña
             };
 
             BtnEdit.Click += delegate
@@ -56,14 +56,14 @@ namespace Supermarket_mvp.Vista
 
                 tabControl1.TabPages.Remove(tabPageCategoryList);
                 tabControl1.TabPages.Add(tabPageCategoryDetail);
-                tabPageCategoryDetail.Text = "Edit New Pay Mode";
+                tabPageCategoryDetail.Text = "Edit New Category";
             };
 
             BtnDelete.Click += delegate
             {
                 SearchEvent?.Invoke(this, EventArgs.Empty);
                 var result = MessageBox.Show(
-                    "Are you sure you want to delete the selected Pay Mode",
+                    "Are you sure you want to delete the selected Category",
                     "Warning",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
@@ -107,7 +107,7 @@ namespace Supermarket_mvp.Vista
             get { return TxtCategoryName.Text; }
             set { TxtCategoryName.Text = value; }
         }
-        public string CategoryObservation
+        public string CategoryDescription
         {
             get { return TxtCategoryDescription.Text; }
             set { TxtCategoryDescription.Text = value; }
@@ -136,8 +136,9 @@ namespace Supermarket_mvp.Vista
         }
 
         public bool IsEdit { get { return isEdit; } set { isEdit = value; } }
+
         
-        
+
         public event EventHandler SearchEvent;
         public event EventHandler AddNewEvent;
         public event EventHandler EditEvent;

@@ -10,7 +10,7 @@ namespace Supermarket_mvp.Vista
     {
         string CategoryId { get; set; }
         string CategoryName { get; set; }
-        string CategoryObservation { get; set; }
+        string CategoryDescription { get; set; }
 
         string SearchValue { get; set; }
         bool IsEdit { get; set; }

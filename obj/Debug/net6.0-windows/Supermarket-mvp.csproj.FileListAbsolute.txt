@@ -43,3 +43,4 @@ C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-m
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket-mvp.csproj.CopyComplete
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\bin\Debug\net6.0-windows\Supermarket-mvp.dll.config
 C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Vista.MainView.resources
+C:\Users\dasst\Documents\CECEP\4\Lenguaje informatico\Consolidado2\Supermarket-mvp\Supermarket-mvp\obj\Debug\net6.0-windows\Supermarket_mvp.Vista.CategoryView.resources

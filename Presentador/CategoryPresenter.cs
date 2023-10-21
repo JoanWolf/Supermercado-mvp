@@ -53,7 +53,7 @@ namespace Supermarket_mvp.Presentador
             var category = new CategoryModel();
             category.Id = Convert.ToInt32(view.CategoryId);
             category.Name = view.CategoryName;
-            category.Observation = view.CategoryObservation;
+            category.Description = view.CategoryDescription;
 
             try
             {
@@ -85,7 +85,7 @@ namespace Supermarket_mvp.Presentador
         {
             view.CategoryId = "0";
             view.CategoryName = "";
-            view.CategoryObservation = "";
+            view.CategoryDescription = "";
         }
 
         private void DeleteSelectedCategory(object? sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace Supermarket_mvp.Presentador
             //del datagridview
             view.CategoryId = Category.Id.ToString();
             view.CategoryName = Category.Name;
-            view.CategoryObservation = Category.Observation;
+            view.CategoryDescription = Category.Description;
 
             //Se establece el modo como edicion
 

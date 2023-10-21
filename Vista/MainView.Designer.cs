@@ -30,8 +30,9 @@
         {
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
-            BtnPayMode = new Button();
+            BtnCategory = new Button();
             BtnExit = new Button();
+            BtnPayMode = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -49,6 +50,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(BtnCategory);
             panel1.Controls.Add(BtnExit);
             panel1.Controls.Add(BtnPayMode);
             panel1.Controls.Add(pictureBox2);
@@ -58,15 +60,15 @@
             panel1.Size = new Size(225, 953);
             panel1.TabIndex = 4;
             // 
-            // BtnPayMode
+            // BtnCategory
             // 
-            BtnPayMode.BackgroundImage = Properties.Resources.buy;
-            BtnPayMode.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnPayMode.Location = new Point(0, 102);
-            BtnPayMode.Name = "BtnPayMode";
-            BtnPayMode.Size = new Size(225, 127);
-            BtnPayMode.TabIndex = 5;
-            BtnPayMode.UseVisualStyleBackColor = true;
+            BtnCategory.BackgroundImage = Properties.Resources.categorias;
+            BtnCategory.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnCategory.Location = new Point(-1, 240);
+            BtnCategory.Name = "BtnCategory";
+            BtnCategory.Size = new Size(225, 127);
+            BtnCategory.TabIndex = 7;
+            BtnCategory.UseVisualStyleBackColor = true;
             // 
             // BtnExit
             // 
@@ -77,6 +79,16 @@
             BtnExit.Size = new Size(225, 140);
             BtnExit.TabIndex = 6;
             BtnExit.UseVisualStyleBackColor = true;
+            // 
+            // BtnPayMode
+            // 
+            BtnPayMode.BackgroundImage = Properties.Resources.buy;
+            BtnPayMode.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnPayMode.Location = new Point(0, 102);
+            BtnPayMode.Name = "BtnPayMode";
+            BtnPayMode.Size = new Size(225, 127);
+            BtnPayMode.TabIndex = 5;
+            BtnPayMode.UseVisualStyleBackColor = true;
             // 
             // MainView
             // 
@@ -99,5 +111,6 @@
         private Panel panel1;
         private Button BtnPayMode;
         private Button BtnExit;
+        private Button BtnCategory;
     }
 }

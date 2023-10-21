@@ -16,11 +16,12 @@ namespace Supermarket_mvp.Vista
         {
             InitializeComponent();
             BtnPayMode.Click += delegate { ShowPayModeView?.Invoke(this, EventArgs.Empty); };
+            BtnCategory.Click += delegate { ShowCategoryView?.Invoke(this, EventArgs.Empty); };
             BtnExit.Click += delegate { this.Close(); };
         }
 
         public event EventHandler ShowPayModeView;
-        public event EventHandler ShowPriductView;
+        public event EventHandler ShowCategoryView;
         public event EventHandler ShowCustomView;
         public event EventHandler ShowProductView;
         public event EventHandler ShowCustomerView;
