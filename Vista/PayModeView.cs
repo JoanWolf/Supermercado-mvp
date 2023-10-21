@@ -85,16 +85,17 @@ namespace Supermarket_mvp.Vista
         public void SetPayModeListBildingSource(BindingSource payModeList)
         {
             DgPayMode.DataSource = payModeList;
-  
+
         }
         //Patron singleton, controla que solo haya una instancia
         private static PayModeView instance;
 
-        public static PayModeView GetInstance()
+        public static PayModeView GetInstance(Form parentContainer)
         {
             if (instance == null || instance.IsDisposed)
             {
                 instance = new PayModeView();
+                instance.MdiParent = parentContainer;
             }
             else
             {

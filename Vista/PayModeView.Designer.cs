@@ -299,6 +299,7 @@
             ClientSize = new Size(1026, 699);
             Controls.Add(TabControl1);
             Controls.Add(panel1);
+            IsMdiContainer = true;
             Name = "PayModeView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pay Mode Management";
