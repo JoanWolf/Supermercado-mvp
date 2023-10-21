@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,9 +85,26 @@ namespace Supermarket_mvp.Vista
         public void SetPayModeListBildingSource(BindingSource payModeList)
         {
             DgPayMode.DataSource = payModeList;
-
-
+  
         }
+        //Patron singleton, controla que solo haya una instancia
+        private static PayModeView instance;
 
+        public static PayModeView GetInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModeView();
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+        }
     }
 }
