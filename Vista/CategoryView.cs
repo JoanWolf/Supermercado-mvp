@@ -136,6 +136,8 @@ namespace Supermarket_mvp.Vista
         }
 
         public bool IsEdit { get { return isEdit; } set { isEdit = value; } }
+        
+        
         public event EventHandler SearchEvent;
         public event EventHandler AddNewEvent;
         public event EventHandler EditEvent;
@@ -145,7 +147,30 @@ namespace Supermarket_mvp.Vista
 
         public void SetCategoryListBildingSource(BindingSource categoryList)
         {
-            throw new NotImplementedException();
+            DgCategory.DataSource = categoryList;
+
+        }
+        //Patron singleton, controla que solo haya una instancia
+        private static CategoryView instance;
+        public static CategoryView GetInstance(Form parentCointainer)
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new CategoryView();
+                instance.MdiParent = parentCointainer;
+
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
         }
     }
 }
