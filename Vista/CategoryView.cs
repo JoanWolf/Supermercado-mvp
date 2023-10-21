@@ -10,11 +10,142 @@ using System.Windows.Forms;
 
 namespace Supermarket_mvp.Vista
 {
-    public partial class CategoryView : Form
+    public partial class CategoryView : Form, ICategoryView
     {
+
+        private bool isEdit;
+        private bool isSuccesful;
+        private string message;
+
         public CategoryView()
         {
             InitializeComponent();
+            AssociateAndRaiseViewEvents();
+
+            tabControl1.TabPages.Remove(tabPageCategoryDetail);
+
+            BtnExit.Click += delegate { this.Close(); };
+        }
+
+        private void AssociateAndRaiseViewEvents()
+        {
+            BtnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
+
+            TxtSearch.KeyDown += (s, e) =>
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    SearchEvent?.Invoke(this, EventArgs.Empty);
+                }
+            };
+
+            // agregar el evento cuando se ahaga clic en el boton New
+            BtnNew.Click += delegate
+            {
+                AddNewEvent?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageCategoryList);
+                tabControl1.TabPages.Add(tabPageCategoryDetail);
+                tabPageCategoryDetail.Text = "Add New Pay Mode"; // cambia titutlo pestaña
+            };
+
+            BtnEdit.Click += delegate
+            {
+                SearchEvent?.Invoke(this, EventArgs.Empty);
+                EditEvent?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageCategoryList);
+                tabControl1.TabPages.Add(tabPageCategoryDetail);
+                tabPageCategoryDetail.Text = "Edit New Pay Mode";
+            };
+
+            BtnDelete.Click += delegate
+            {
+                SearchEvent?.Invoke(this, EventArgs.Empty);
+                var result = MessageBox.Show(
+                    "Are you sure you want to delete the selected Pay Mode",
+                    "Warning",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    DeleteEvent?.Invoke(this, EventArgs.Empty);
+                    MessageBox.Show(Message);
+                }
+            };
+
+            BtnSave.Click += delegate
+            {
+                SearchEvent?.Invoke(this, EventArgs.Empty);
+                SaveEvent?.Invoke(this, EventArgs.Empty);
+                if (isSuccesful) // Si Grabar fue exitoso
+                {
+                    tabControl1.TabPages.Remove(tabPageCategoryDetail);
+                    tabControl1.TabPages.Add(tabPageCategoryList);
+                }
+                MessageBox.Show(Message);
+            };
+
+            BtnCancel.Click += delegate
+            {
+                SearchEvent?.Invoke(this, EventArgs.Empty);
+                CancelEvent?.Invoke(this, EventArgs.Empty);
+
+                tabControl1.TabPages.Remove(tabPageCategoryDetail);
+                tabControl1.TabPages.Add(tabPageCategoryList);
+            };
+
+
+        }
+
+        public string CategoryId
+        {
+            get { return TxtCategoryId.Text; }
+            set { TxtCategoryId.Text = value; }
+        }
+        public string CategoryName
+        {
+            get { return TxtCategoryName.Text; }
+            set { TxtCategoryName.Text = value; }
+        }
+        public string CategoryObservation
+        {
+            get { return TxtCategoryDescription.Text; }
+            set { TxtCategoryDescription.Text = value; }
+        }
+        public string SearchValue
+        {
+            get { return TxtSearch.Text; }
+            set { TxtSearch.Text = value; }
+
+        }
+        public bool
+            Edit
+        {
+            get { return isEdit; }
+            set { isEdit = value; }
+        }
+        public bool IsSuccesful
+        {
+            get { return isSuccesful; }
+            set { isSuccesful = value; }
+        }
+        public string Message
+        {
+            get { return message; }
+            set { message = value; }
+        }
+
+        public bool IsEdit { get { return isEdit; } set { isEdit = value; } }
+        public event EventHandler SearchEvent;
+        public event EventHandler AddNewEvent;
+        public event EventHandler EditEvent;
+        public event EventHandler DeleteEvent;
+        public event EventHandler SaveEvent;
+        public event EventHandler CancelEvent;
+
+        public void SetCategoryListBildingSource(BindingSource categoryList)
+        {
+            throw new NotImplementedException();
         }
     }
 }
