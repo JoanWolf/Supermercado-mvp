@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnPayMode = new PictureBox();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)BtnPayMode).BeginInit();
+            BtnPayMode = new Button();
+            
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // BtnPayMode
-            // 
-            BtnPayMode.Image = Properties.Resources.buy;
-            BtnPayMode.Location = new Point(1, 96);
-            BtnPayMode.Name = "BtnPayMode";
-            BtnPayMode.Size = new Size(222, 125);
-            BtnPayMode.SizeMode = PictureBoxSizeMode.Zoom;
-            BtnPayMode.TabIndex = 2;
-            BtnPayMode.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -59,34 +49,45 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(pictureBox2);
+            
             panel1.Controls.Add(BtnPayMode);
+            panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(225, 953);
             panel1.TabIndex = 4;
             // 
+            // BtnPayMode
+            // 
+            BtnPayMode.BackgroundImage = Properties.Resources.buy;
+            BtnPayMode.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnPayMode.Location = new Point(0, 102);
+            BtnPayMode.Name = "BtnPayMode";
+            BtnPayMode.Size = new Size(225, 127);
+            BtnPayMode.TabIndex = 5;
+            BtnPayMode.UseVisualStyleBackColor = true;
+            // 
+          
             // MainView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1182, 953);
             Controls.Add(panel1);
+            IsMdiContainer = true;
             Name = "MainView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Supermarket ";
             WindowState = FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)BtnPayMode).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox BtnPayMode;
         private PictureBox pictureBox2;
         private Panel panel1;
+        private Button BtnPayMode;
     }
 }

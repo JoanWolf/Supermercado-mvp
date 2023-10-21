@@ -23,6 +23,8 @@ namespace Supermarket_mvp.Vista
             AssociateAndRaiseViewEvents();
 
             TabControl1.TabPages.Remove(tabPagePayModeDetail);
+
+            BtnExit.Click += delegate { this.Close(); };
         }
 
         private void AssociateAndRaiseViewEvents()
@@ -89,13 +91,15 @@ namespace Supermarket_mvp.Vista
         }
         //Patron singleton, controla que solo haya una instancia
         private static PayModeView instance;
-
-        public static PayModeView GetInstance(Form parentContainer)
+        public static PayModeView GetInstance(Form parentCointainer)
         {
             if (instance == null || instance.IsDisposed)
             {
                 instance = new PayModeView();
-                instance.MdiParent = parentContainer;
+                instance.MdiParent = parentCointainer;
+
+                instance.FormBorderStyle = FormBorderStyle.None;
+                instance.Dock = DockStyle.Fill;
             }
             else
             {
@@ -109,3 +113,4 @@ namespace Supermarket_mvp.Vista
         }
     }
 }
+
