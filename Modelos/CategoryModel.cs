@@ -14,14 +14,14 @@ namespace Supermarket_mvp.Modelos
         public int Id { get; set; }
 
         [DisplayName("Category Name")]
-        [Required(ErrorMessage = "Category mode name is required")]
-        [StringLength(50, MinimumLength = 3, ErrorMessage = "Pay mode name must be between 3 and 50 characters")]
+        [Required(ErrorMessage = " Category name is required")]
+        [StringLength(50, MinimumLength = 3, ErrorMessage = "Category name must be between 3 and 50 characters")]
 
         public string Name { get; set; }
 
-        [DisplayName("Observation")]
-        [Required(ErrorMessage = "Pay mode Observation is required")]
-        [StringLength(200, MinimumLength = 3, ErrorMessage = "Pay mode observation must be between 3 and 200 characters")]
+        [DisplayName("Description")]
+        [Required(ErrorMessage = "Category Description is required")]
+        [StringLength(200, MinimumLength = 3, ErrorMessage = "Category observation must be between 3 and 200 characters")]
         public string Observation { get; set; }
     }
 }
