@@ -26,7 +26,7 @@ namespace Supermarket_mvp.Modelos
 
         [DisplayName("Price")]
         [Required(ErrorMessage = "Price is required")]
-        public double Price { get; set; }
+        public int Price { get; set; }
 
         [DisplayName("Stock")]
         [Required(ErrorMessage = "Stock is required")]
