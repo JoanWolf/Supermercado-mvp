@@ -8,7 +8,12 @@ namespace Supermarket_mvp.Vista
 {
     internal interface IProductsView
     {
-        
+        string ProductsId { get; set; }
+        string ProductsName { get; set; }
+        string ProductsPrice { get; set; }
+        string ProductsStock { get; set; }
+        string Products_IdCategory { get; set; }
+
         string SearchValue { get; set; }
         bool IsEdit { get; set; }
         bool IsSuccesful { get; set; }
