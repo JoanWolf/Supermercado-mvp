@@ -10,7 +10,7 @@ namespace Supermarket_mvp.Vista
     {
         string ProvidersId { get; set; }
         string ProvidersName { get; set; }
-        string ProvidersObservation { get; set; }
+        string ProvidersDescription { get; set; }
 
         string SearchValue { get; set; }
         bool IsEdit { get; set; }
@@ -24,7 +24,7 @@ namespace Supermarket_mvp.Vista
         event EventHandler SaveEvent;
         event EventHandler CancelEvent;
 
-        void SetProvidersListBildingSource(BindingSource payModeList);
+        void SetProvidersListBildingSource(BindingSource providers);
         void Show();
     }
 }
