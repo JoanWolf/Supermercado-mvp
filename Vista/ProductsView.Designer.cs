@@ -67,19 +67,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.producto;
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(12, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(196, 125);
+            pictureBox1.Size = new Size(196, 147);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
+            label1.Dock = DockStyle.Fill;
             label1.Font = new Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(224, 12);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(269, 125);
+            label1.Size = new Size(1099, 147);
             label1.TabIndex = 0;
             label1.Text = "PRODUCTS";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -99,10 +100,11 @@
             // 
             tabControl1.Controls.Add(tabPageProductsList);
             tabControl1.Controls.Add(tabPageProductsDetails);
-            tabControl1.Location = new Point(0, 153);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 147);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1107, 548);
+            tabControl1.Size = new Size(1099, 552);
             tabControl1.TabIndex = 2;
             // 
             // tabPageProductsList
@@ -118,7 +120,7 @@
             tabPageProductsList.Location = new Point(4, 29);
             tabPageProductsList.Name = "tabPageProductsList";
             tabPageProductsList.Padding = new Padding(3);
-            tabPageProductsList.Size = new Size(1099, 515);
+            tabPageProductsList.Size = new Size(1091, 519);
             tabPageProductsList.TabIndex = 0;
             tabPageProductsList.Text = "Pay Mode List";
             tabPageProductsList.UseVisualStyleBackColor = true;
@@ -127,7 +129,7 @@
             // 
             BtnExit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnExit.Image = Properties.Resources.cerrar;
-            BtnExit.Location = new Point(835, 412);
+            BtnExit.Location = new Point(908, 412);
             BtnExit.Name = "BtnExit";
             BtnExit.Size = new Size(147, 78);
             BtnExit.TabIndex = 15;
@@ -137,7 +139,7 @@
             // 
             BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnDelete.Image = Properties.Resources.delete;
-            BtnDelete.Location = new Point(835, 307);
+            BtnDelete.Location = new Point(908, 307);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(147, 78);
             BtnDelete.TabIndex = 14;
@@ -147,7 +149,7 @@
             // 
             BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.Image = Properties.Resources.edit;
-            BtnEdit.Location = new Point(835, 201);
+            BtnEdit.Location = new Point(908, 201);
             BtnEdit.Name = "BtnEdit";
             BtnEdit.Size = new Size(147, 78);
             BtnEdit.TabIndex = 13;
@@ -157,7 +159,7 @@
             // 
             BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNew.Image = Properties.Resources._new;
-            BtnNew.Location = new Point(835, 85);
+            BtnNew.Location = new Point(908, 85);
             BtnNew.Name = "BtnNew";
             BtnNew.Size = new Size(147, 78);
             BtnNew.TabIndex = 12;
@@ -170,12 +172,12 @@
             DgProducts.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DgProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgProducts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgProducts.Location = new Point(8, 85);
+            DgProducts.Location = new Point(17, 85);
             DgProducts.Name = "DgProducts";
             DgProducts.ReadOnly = true;
             DgProducts.RowHeadersWidth = 51;
             DgProducts.RowTemplate.Height = 29;
-            DgProducts.Size = new Size(766, 405);
+            DgProducts.Size = new Size(864, 409);
             DgProducts.TabIndex = 11;
             // 
             // BtnSearch
@@ -184,7 +186,7 @@
             BtnSearch.BackColor = Color.Silver;
             BtnSearch.BackgroundImage = Properties.Resources.search;
             BtnSearch.BackgroundImageLayout = ImageLayout.Stretch;
-            BtnSearch.Location = new Point(723, 30);
+            BtnSearch.Location = new Point(830, 29);
             BtnSearch.Name = "BtnSearch";
             BtnSearch.Size = new Size(51, 50);
             BtnSearch.TabIndex = 10;
@@ -193,16 +195,16 @@
             // TxtSearch
             // 
             TxtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            TxtSearch.Location = new Point(8, 42);
+            TxtSearch.Location = new Point(17, 42);
             TxtSearch.Name = "TxtSearch";
             TxtSearch.PlaceholderText = "Data to search";
-            TxtSearch.Size = new Size(709, 27);
+            TxtSearch.Size = new Size(807, 27);
             TxtSearch.TabIndex = 9;
             // 
             // label2
             // 
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(8, 17);
+            label2.Location = new Point(17, 17);
             label2.Name = "label2";
             label2.Size = new Size(136, 22);
             label2.TabIndex = 8;
@@ -226,7 +228,7 @@
             tabPageProductsDetails.Location = new Point(4, 29);
             tabPageProductsDetails.Name = "tabPageProductsDetails";
             tabPageProductsDetails.Padding = new Padding(3);
-            tabPageProductsDetails.Size = new Size(1099, 515);
+            tabPageProductsDetails.Size = new Size(1091, 519);
             tabPageProductsDetails.TabIndex = 1;
             tabPageProductsDetails.Text = "Pay Mode Details";
             tabPageProductsDetails.UseVisualStyleBackColor = true;
@@ -237,14 +239,14 @@
             CBoxIdCategory.FormattingEnabled = true;
             CBoxIdCategory.Location = new Point(62, 394);
             CBoxIdCategory.Name = "CBoxIdCategory";
-            CBoxIdCategory.Size = new Size(410, 28);
+            CBoxIdCategory.Size = new Size(456, 28);
             CBoxIdCategory.TabIndex = 18;
             // 
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.Image = Properties.Resources.seguro_de_calidad;
-            pictureBox2.Location = new Point(569, 68);
+            pictureBox2.Location = new Point(615, 68);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(405, 271);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -256,7 +258,7 @@
             BtnCancel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnCancel.Image = Properties.Resources.cancel;
             BtnCancel.ImageAlign = ContentAlignment.TopCenter;
-            BtnCancel.Location = new Point(792, 361);
+            BtnCancel.Location = new Point(838, 361);
             BtnCancel.Name = "BtnCancel";
             BtnCancel.Size = new Size(125, 62);
             BtnCancel.TabIndex = 17;
@@ -269,7 +271,7 @@
             BtnSave.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSave.Image = Properties.Resources.save;
             BtnSave.ImageAlign = ContentAlignment.TopCenter;
-            BtnSave.Location = new Point(617, 361);
+            BtnSave.Location = new Point(663, 361);
             BtnSave.Name = "BtnSave";
             BtnSave.Size = new Size(125, 62);
             BtnSave.TabIndex = 16;
@@ -293,7 +295,7 @@
             TxtStock.Location = new Point(62, 297);
             TxtStock.Name = "TxtStock";
             TxtStock.PlaceholderText = "Stock";
-            TxtStock.Size = new Size(410, 27);
+            TxtStock.Size = new Size(456, 27);
             TxtStock.TabIndex = 13;
             // 
             // label6
@@ -312,7 +314,7 @@
             TxtPrice.Location = new Point(62, 219);
             TxtPrice.Name = "TxtPrice";
             TxtPrice.PlaceholderText = "Price";
-            TxtPrice.Size = new Size(410, 27);
+            TxtPrice.Size = new Size(456, 27);
             TxtPrice.TabIndex = 11;
             // 
             // label5
@@ -331,7 +333,7 @@
             TxtProductsName.Location = new Point(62, 137);
             TxtProductsName.Name = "TxtProductsName";
             TxtProductsName.PlaceholderText = "Product Name";
-            TxtProductsName.Size = new Size(410, 27);
+            TxtProductsName.Size = new Size(456, 27);
             TxtProductsName.TabIndex = 9;
             // 
             // label4
@@ -350,7 +352,7 @@
             TxtProductsId.Location = new Point(62, 68);
             TxtProductsId.Name = "TxtProductsId";
             TxtProductsId.ReadOnly = true;
-            TxtProductsId.Size = new Size(220, 27);
+            TxtProductsId.Size = new Size(266, 27);
             TxtProductsId.TabIndex = 7;
             TxtProductsId.Text = "0";
             TxtProductsId.TextAlign = HorizontalAlignment.Right;

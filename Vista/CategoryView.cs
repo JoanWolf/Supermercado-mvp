@@ -137,7 +137,7 @@ namespace Supermarket_mvp.Vista
 
         public bool IsEdit { get { return isEdit; } set { isEdit = value; } }
 
-        
+
 
         public event EventHandler SearchEvent;
         public event EventHandler AddNewEvent;

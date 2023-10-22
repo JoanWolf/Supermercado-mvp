@@ -46,8 +46,7 @@
             TxtCategoryDescription = new TextBox();
             TxtCategoryName = new TextBox();
             TxtCategoryId = new TextBox();
-            
-            label5= new Label();
+            label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             BtnSave = new Button();
@@ -73,19 +72,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.categorias;
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(196, 125);
+            pictureBox1.Size = new Size(196, 147);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
+            label1.Dock = DockStyle.Fill;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(202, 0);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(269, 125);
+            label1.Size = new Size(970, 147);
             label1.TabIndex = 0;
             label1.Text = "CATEGORY";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -98,7 +98,7 @@
             tabControl1.Location = new Point(0, 147);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(970, 515);
+            tabControl1.Size = new Size(970, 528);
             tabControl1.TabIndex = 2;
             // 
             // tabPageCategoryList
@@ -114,7 +114,7 @@
             tabPageCategoryList.Location = new Point(4, 29);
             tabPageCategoryList.Name = "tabPageCategoryList";
             tabPageCategoryList.Padding = new Padding(3);
-            tabPageCategoryList.Size = new Size(962, 482);
+            tabPageCategoryList.Size = new Size(962, 495);
             tabPageCategoryList.TabIndex = 0;
             tabPageCategoryList.Text = "Category List";
             tabPageCategoryList.UseVisualStyleBackColor = true;
@@ -171,7 +171,7 @@
             DgCategory.ReadOnly = true;
             DgCategory.RowHeadersWidth = 51;
             DgCategory.RowTemplate.Height = 29;
-            DgCategory.Size = new Size(766, 405);
+            DgCategory.Size = new Size(766, 400);
             DgCategory.TabIndex = 11;
             // 
             // BtnSearch
@@ -307,7 +307,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(970, 662);
+            ClientSize = new Size(970, 675);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
             Name = "CategoryView";

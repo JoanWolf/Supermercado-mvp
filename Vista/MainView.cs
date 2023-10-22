@@ -28,5 +28,7 @@ namespace Supermarket_mvp.Vista
         public event EventHandler ShowCustomerView;
         public event EventHandler ShowProvidersView;
         public event EventHandler ShowProducstView;
+
+
     }
 }

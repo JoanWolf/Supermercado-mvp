@@ -72,19 +72,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Proveedores;
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(12, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(196, 125);
+            pictureBox1.Size = new Size(196, 162);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
+            label1.Dock = DockStyle.Fill;
             label1.Font = new Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(214, 12);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(269, 125);
+            label1.Size = new Size(1026, 162);
             label1.TabIndex = 0;
             label1.Text = "PROVIDERS";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -93,10 +94,11 @@
             // 
             tabControl1.Controls.Add(tabPageProvidersList);
             tabControl1.Controls.Add(tabPageProvidersDetail);
-            tabControl1.Location = new Point(0, 168);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 162);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1026, 533);
+            tabControl1.Size = new Size(1026, 537);
             tabControl1.TabIndex = 2;
             // 
             // tabPageProvidersList
@@ -112,7 +114,7 @@
             tabPageProvidersList.Location = new Point(4, 29);
             tabPageProvidersList.Name = "tabPageProvidersList";
             tabPageProvidersList.Padding = new Padding(3);
-            tabPageProvidersList.Size = new Size(1018, 500);
+            tabPageProvidersList.Size = new Size(1018, 504);
             tabPageProvidersList.TabIndex = 0;
             tabPageProvidersList.Text = "Providers List";
             tabPageProvidersList.UseVisualStyleBackColor = true;
@@ -164,12 +166,12 @@
             DgProviders.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DgProviders.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgProviders.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgProviders.Location = new Point(40, 82);
+            DgProviders.Location = new Point(8, 82);
             DgProviders.Name = "DgProviders";
             DgProviders.ReadOnly = true;
             DgProviders.RowHeadersWidth = 51;
             DgProviders.RowTemplate.Height = 29;
-            DgProviders.Size = new Size(766, 405);
+            DgProviders.Size = new Size(798, 405);
             DgProviders.TabIndex = 11;
             // 
             // BtnSearch
@@ -187,20 +189,20 @@
             // TxtSearch
             // 
             TxtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            TxtSearch.Location = new Point(40, 39);
+            TxtSearch.Location = new Point(8, 39);
             TxtSearch.Name = "TxtSearch";
             TxtSearch.PlaceholderText = "Data to search";
-            TxtSearch.Size = new Size(709, 27);
+            TxtSearch.Size = new Size(741, 27);
             TxtSearch.TabIndex = 9;
             // 
             // label2
             // 
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(40, 14);
+            label2.Location = new Point(8, 14);
             label2.Name = "label2";
             label2.Size = new Size(136, 22);
             label2.TabIndex = 8;
-            label2.Text = "Search Pay Mode";
+            label2.Text = "Search Providers";
             // 
             // tabPageProvidersDetail
             // 
@@ -215,7 +217,7 @@
             tabPageProvidersDetail.Location = new Point(4, 29);
             tabPageProvidersDetail.Name = "tabPageProvidersDetail";
             tabPageProvidersDetail.Padding = new Padding(3);
-            tabPageProvidersDetail.Size = new Size(1018, 500);
+            tabPageProvidersDetail.Size = new Size(1018, 504);
             tabPageProvidersDetail.TabIndex = 1;
             tabPageProvidersDetail.Text = "Providers Details";
             tabPageProvidersDetail.UseVisualStyleBackColor = true;
