@@ -55,6 +55,7 @@ namespace Supermarket_mvp.Presentador
             products.Price = Convert.ToInt32(view.ProductsPrice);
             products.Stock = Convert.ToInt32(view.ProductsStock);
             products.Category_Id = Convert.ToInt32(view.Products_IdCategory.Substring(0, 6));
+
             
 
             try
@@ -88,6 +89,7 @@ namespace Supermarket_mvp.Presentador
             view.ProductsName = "";
             view.ProductsPrice = "";
             view.ProductsStock = "";
+            view.Products_IdCategory = "";
         }
 
         private void DeleteSelectedProducts(object? sender, EventArgs e)
@@ -118,7 +120,8 @@ namespace Supermarket_mvp.Presentador
             view.ProductsId = Products.Id.ToString();
             view.ProductsName = Products.Name;
             view.ProductsPrice = Products.Price.ToString();
-            view.ProductsPrice = Products.Stock.ToString();
+            view.ProductsStock = Products.Stock.ToString();
+            view.Products_IdCategory = Products.Category_Id.ToString();
 
             //Se establece el modo como edicion
 

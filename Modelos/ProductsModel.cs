@@ -19,10 +19,10 @@ namespace Supermarket_mvp.Modelos
         public string Name { get; set; }
 
 
-        [DisplayName("Description")]
-        [Required(ErrorMessage = "Products Observation is required")]
-        [StringLength(200, MinimumLength = 3, ErrorMessage = "Products observation must be between 3 and 200 characters")]
-        public string description { get; set; }
+        //[DisplayName("Description")]
+        //[Required(ErrorMessage = "Products description is required")]
+        //[StringLength(200, MinimumLength = 3, ErrorMessage = "Products description must be between 3 and 200 characters")]
+        //public string Description { get; set; }
 
         [DisplayName("Price")]
         [Required(ErrorMessage = "Price is required")]

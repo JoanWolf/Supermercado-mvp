@@ -71,7 +71,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.buy;
+            pictureBox1.Image = Properties.Resources.Proveedores;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(196, 125);
@@ -301,14 +301,14 @@
             label3.TabIndex = 8;
             label3.Text = "Providers Id";
             // 
-            // ProviderView
+            // ProvidersView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1026, 699);
             Controls.Add(tabControl1);
             Controls.Add(panel1);
-            Name = "ProviderView";
+            Name = "ProvidersView";
             Text = "ProviderView";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -345,5 +345,6 @@
         private Label label3;
         private Button BtnSave;
         private Button BtnCancel;
+
     }
 }

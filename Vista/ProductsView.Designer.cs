@@ -233,6 +233,7 @@
             // 
             // CBoxIdCategory
             // 
+            CBoxIdCategory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             CBoxIdCategory.FormattingEnabled = true;
             CBoxIdCategory.Location = new Point(62, 394);
             CBoxIdCategory.Name = "CBoxIdCategory";
@@ -241,6 +242,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.Image = Properties.Resources.seguro_de_calidad;
             pictureBox2.Location = new Point(569, 68);
             pictureBox2.Name = "pictureBox2";
@@ -251,6 +253,7 @@
             // 
             // BtnCancel
             // 
+            BtnCancel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnCancel.Image = Properties.Resources.cancel;
             BtnCancel.ImageAlign = ContentAlignment.TopCenter;
             BtnCancel.Location = new Point(792, 361);
@@ -263,6 +266,7 @@
             // 
             // BtnSave
             // 
+            BtnSave.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSave.Image = Properties.Resources.save;
             BtnSave.ImageAlign = ContentAlignment.TopCenter;
             BtnSave.Location = new Point(617, 361);
@@ -285,6 +289,7 @@
             // 
             // TxtStock
             // 
+            TxtStock.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TxtStock.Location = new Point(62, 297);
             TxtStock.Name = "TxtStock";
             TxtStock.PlaceholderText = "Stock";
@@ -303,6 +308,7 @@
             // 
             // TxtPrice
             // 
+            TxtPrice.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TxtPrice.Location = new Point(62, 219);
             TxtPrice.Name = "TxtPrice";
             TxtPrice.PlaceholderText = "Price";
@@ -321,6 +327,7 @@
             // 
             // TxtProductsName
             // 
+            TxtProductsName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TxtProductsName.Location = new Point(62, 137);
             TxtProductsName.Name = "TxtProductsName";
             TxtProductsName.PlaceholderText = "Product Name";
@@ -339,6 +346,7 @@
             // 
             // TxtProductsId
             // 
+            TxtProductsId.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TxtProductsId.Location = new Point(62, 68);
             TxtProductsId.Name = "TxtProductsId";
             TxtProductsId.ReadOnly = true;
@@ -406,6 +414,6 @@
         private Button BtnCancel;
         private Button BtnSave;
         private PictureBox pictureBox2;
-        private ComboBox CBoxIdCategory;
+        public static ComboBox CBoxIdCategory;
     }
 }
