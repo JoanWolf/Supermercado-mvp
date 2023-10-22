@@ -132,7 +132,7 @@ namespace Supermarket_mvp._Repositorios
             }
             return productsList;
         }
-
+        // Funcion para Combo Box //////////////////////////////////////
         public void FeedComboBoxCategorias()
         {
             ProductsView.CBoxIdCategory.Items.Clear();
