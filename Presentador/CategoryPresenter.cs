@@ -96,7 +96,7 @@ namespace Supermarket_mvp.Presentador
 
                 repository.Delete(category.Id);
                 view.IsSuccesful = true;
-                view.Message = "Pay Mode deleted successfully";
+                view.Message = "Category deleted successfully";
                 loadAllCategoryList();
             }
             catch (Exception ex)

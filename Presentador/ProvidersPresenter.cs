@@ -95,7 +95,7 @@ namespace Supermarket_mvp.Presentador
 
                 repository.Delete(providers.Id);
                 view.IsSuccesful = true;
-                view.Message = "Pay Mode deleted successfully";
+                view.Message = "deleted successfully";
                 loadAllProvidersList();
             }
             catch (Exception ex)

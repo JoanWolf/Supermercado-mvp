@@ -3,7 +3,10 @@
 ################################################################################
 
 /Vista/IMainView.cs
-/Vista/IPayModeView.cs
+/Vista/I
+
+
+View.cs
 /Vista/MainView.cs
 /Vista/MainView.Designer.cs
 /Vista/MainView.resx
