@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Supermarket_mvp.Vista
 {
-    public partial class ProviderView : Form, IProvidersView
+    public partial class ProvidersView : Form, IProvidersView
     {
         private bool isEdit;
         private bool isSuccesful;
         private string message;
-        public ProviderView()
+        public ProvidersView()
         {
             InitializeComponent();
             AssociateAndRaiseViewEvents();
@@ -145,12 +145,12 @@ namespace Supermarket_mvp.Vista
 
         }
         //Patron singleton, controla que solo haya una instancia
-        private static ProviderView instance;
-        public static ProviderView GetInstance(Form parentCointainer)
+        private static ProvidersView instance;
+        public static ProvidersView GetInstance(Form parentCointainer)
         {
             if (instance == null || instance.IsDisposed)
             {
-                instance = new ProviderView();
+                instance = new ProvidersView();
                 instance.MdiParent = parentCointainer;
 
                 instance.FormBorderStyle = FormBorderStyle.None;

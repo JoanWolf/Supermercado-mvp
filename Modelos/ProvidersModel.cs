@@ -22,6 +22,6 @@ namespace Supermarket_mvp.Modelos
         [DisplayName("Observation")]
         [Required(ErrorMessage = "providers Observation is required")]
         [StringLength(200, MinimumLength = 3, ErrorMessage = "providers observation must be between 3 and 200 characters")]
-        public string Observation { get; set; }
+        public string Description { get; set; }
     }
 }

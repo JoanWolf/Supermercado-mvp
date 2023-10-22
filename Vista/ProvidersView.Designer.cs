@@ -1,6 +1,6 @@
 ﻿namespace Supermarket_mvp.Vista
 {
-    partial class ProviderView
+    partial class ProvidersView
     {
         /// <summary>
         /// Required designer variable.
